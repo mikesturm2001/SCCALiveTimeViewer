@@ -1,0 +1,9 @@
+Website for Results: http://sololive.texasscca.org/
+
+HTML Agility Pack: (example for parsing thru multiple nodes)
+
+http://stackoverflow.com/questions/846994/how-to-use-html-agility-pack
+
+
+
+
