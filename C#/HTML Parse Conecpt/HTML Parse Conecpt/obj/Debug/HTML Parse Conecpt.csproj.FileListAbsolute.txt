@@ -1,0 +1,9 @@
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HTML Parse Conecpt.exe.config
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HTML Parse Conecpt.exe
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HTML Parse Conecpt.pdb
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HtmlAgilityPack.dll
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HtmlAgilityPack.pdb
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HtmlAgilityPack.xml
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.exe
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.pdb
+c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.csprojResolveAssemblyReference.cache
