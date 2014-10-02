@@ -35,7 +35,10 @@ namespace HTML_Parse_Conecpt
             //(Proof of concept) output here: would be return of webservice
             foreach (DriverData car in SccaDrivers)
             {
-                Console.WriteLine(car.Name + " : " + car.Number);
+         
+                Console.WriteLine("#" + car.Number + " " + car.Name + " : " + car.Total);
+                Console.WriteLine("Run 1: " + car.Time1 + " Run 2: " + car.Time2 + " Run 3: " + car.Time3 + " Run 4: " + car.Time4 + " Run 5: " + car.Time5);
+                Console.WriteLine(car.ToString());
             }
 
         }
@@ -69,9 +72,10 @@ namespace HTML_Parse_Conecpt
                         //error, somehow the html was read in wrong
                     }
                     else
-                    {
+                    {                        
                         DriverData driverObject = new DriverData(driverData[0], driverData[1], driverData[2], driverData[3], driverData[4], driverData[5], driverData[6], driverData[7], driverData[8], driverData[9], driverData[10], driverData[11], driverData[12], driverData[15], driverData[16]);
                         parsedSccaRacers.Add(driverObject);
+
                     }
                 }
             }

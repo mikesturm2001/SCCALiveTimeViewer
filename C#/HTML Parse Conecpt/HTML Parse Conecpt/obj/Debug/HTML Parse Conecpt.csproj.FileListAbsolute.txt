@@ -7,3 +7,12 @@ c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML P
 c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.exe
 c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.pdb
 c:\users\michael\documents\visual studio 2013\Projects\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.csprojResolveAssemblyReference.cache
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HTML Parse Conecpt.exe.config
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.exe
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.pdb
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HTML Parse Conecpt.exe
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HTML Parse Conecpt.pdb
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\bin\Debug\HtmlAgilityPack.xml
+C:\Users\nicholas.schnick\git\SCCALT\SCCALiveTimeViewer\C#\HTML Parse Conecpt\HTML Parse Conecpt\obj\Debug\HTML Parse Conecpt.csprojResolveAssemblyReference.cache
