@@ -43,6 +43,23 @@ namespace HTML_Parse_Conecpt.DriverDataClass
             Diff = diff;
         }
 
+        public DriverData(string place, string carclass, string number, string name, string car, string time1, string time2, string time3, string time4, string time5, string total, string diff)
+        {
+            Place = place;
+            CarClass = carclass;
+            Number = number;
+            Name = name;
+            Car = car;              
+            Time1 = cleanUpTimes(time1);
+            Time2 = cleanUpTimes(time2);
+            Time3 = cleanUpTimes(time3);
+            Time4 = cleanUpTimes(time4);
+            Time5 = cleanUpTimes(time5);            
+            Total = cleanUpTimes(total);
+            Diff = diff;
+        }
+
+
         public string cleanUpTimes(string time)
         {
             if (time != "")
@@ -52,7 +69,7 @@ namespace HTML_Parse_Conecpt.DriverDataClass
                 //checks to see if the HTML is FUBAR
                 if(!(time.Substring(0,1).Equals(" ")))
                 {
-                    start = time.IndexOf(">") + 2;
+                    start = time.IndexOf(">") + 1;
                 }               
                 //finds the tag at the end of the time to set the ending index
                 int end = time.IndexOf("<", start);                
@@ -61,6 +78,7 @@ namespace HTML_Parse_Conecpt.DriverDataClass
                     return time;
                 //takes the substring of the given indexes to return the time
                 string result = time.Substring(start, end - start);
+                time.Trim();
                 return result;
             }
             else
