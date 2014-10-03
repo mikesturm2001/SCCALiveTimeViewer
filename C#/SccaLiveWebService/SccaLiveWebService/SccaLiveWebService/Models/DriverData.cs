@@ -22,7 +22,7 @@ namespace SccaLiveWebService.Models
         public string Time5 { get; set; }
         public string Time6 { get; set; }
         public string Total { get; set; }
-        public string Diff { get; set; }
+        public double Diff { get; set; }
 
         public DriverData()
         {
@@ -44,8 +44,8 @@ namespace SccaLiveWebService.Models
             Time4 = cleanUpTimes(time4);
             Time5 = cleanUpTimes(time5);
             Time6 = cleanUpTimes(time6);
-            Total = cleanUpTimes(total);                 
-            Diff = diff;
+            Total = cleanUpTimes(total);
+            Diff = ConvertTimeToDouble(diff);
         }
 
         public DriverData(string place, string carclass, string number, string name, string car, string time1, string time2, string time3, string time4, string time5, string total, string diff)
@@ -61,7 +61,7 @@ namespace SccaLiveWebService.Models
             Time4 = cleanUpTimes(time4);
             Time5 = cleanUpTimes(time5);            
             Total = cleanUpTimes(total);
-            Diff = diff;
+            Diff = ConvertTimeToDouble(diff);
         }
 
 
@@ -88,6 +88,26 @@ namespace SccaLiveWebService.Models
             }
             else
                 return time;
+        }
+
+        public double ConvertTimeToDouble(string diff)
+        {
+            double time = 0.0;
+            if(diff.Equals("") || diff.Equals("-"))
+            {
+                return time;
+            }
+            if(diff.Contains("[-]"))
+            {
+                diff = diff.Replace("[-]", "");
+                time = Convert.ToDouble(diff) * (-1);
+                return time;
+            }
+            else
+            {
+                return Convert.ToDouble(diff);
+            }
+
         }
     }
 }
