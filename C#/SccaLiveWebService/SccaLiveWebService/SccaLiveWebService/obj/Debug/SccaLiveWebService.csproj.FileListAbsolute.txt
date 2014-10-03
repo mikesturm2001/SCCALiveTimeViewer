@@ -1,0 +1,17 @@
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\SccaLiveWebService.dll.config
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\SccaLiveWebService.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\SccaLiveWebService.pdb
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\HtmlAgilityPack.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\Newtonsoft.Json.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\System.Net.Http.Formatting.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\System.Web.Http.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\System.Web.Http.WebHost.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\HtmlAgilityPack.pdb
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\HtmlAgilityPack.xml
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\Newtonsoft.Json.xml
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\System.Net.Http.Formatting.xml
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\System.Web.Http.xml
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\bin\System.Web.Http.WebHost.xml
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\obj\Debug\SccaLiveWebService.csprojResolveAssemblyReference.cache
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\obj\Debug\SccaLiveWebService.dll
+C:\SCCA\SCCALiveTimeViewer\C#\SccaLiveWebService\SccaLiveWebService\SccaLiveWebService\obj\Debug\SccaLiveWebService.pdb
