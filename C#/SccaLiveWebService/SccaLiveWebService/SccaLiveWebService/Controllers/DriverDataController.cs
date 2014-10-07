@@ -14,20 +14,35 @@ namespace SccaLiveWebService.Controllers
         public IHttpActionResult GetDriverData()
         {
             //Create List of Drivers
-            DriverData[] SccaDrivers = getDrivers();
-            if(SccaDrivers != null)
+            int num = 0;
+            DriverData[] SccaDrivers = getDrivers(num);
+            if (SccaDrivers != null)
             {
                 return Ok(SccaDrivers);
-                //return Ok("Testing");
             }
             else
             {
                 return NotFound();
             }
-            
+
         }
 
-        public static DriverData[] getDrivers()
+        public IHttpActionResult GetEventDriverData(int id)
+        {
+            //Create List of Drivers
+            DriverData[] SccaDrivers = getDrivers(id);
+            if (SccaDrivers != null)
+            {
+                return Ok(SccaDrivers);
+            }
+            else
+            {
+                return NotFound();
+            }
+
+        }
+
+        public static DriverData[] getDrivers(int eventNumber)
         {
             //Create the Web Client
             WebClient client = new WebClient();
@@ -36,15 +51,31 @@ namespace SccaLiveWebService.Controllers
             HtmlAgilityPack.HtmlDocument htmlDoc = new HtmlAgilityPack.HtmlDocument();
             htmlDoc.OptionFixNestedTags = true;
 
+            string HtmlCode;
             //Read in the HTML
-            String HtmlCode = client.DownloadString("http://www.sololive.texasscca.org");
-
+            if (eventNumber == 0)
+            {
+                HtmlCode = client.DownloadString("http://www.sololive.texasscca.org");
+            }
+            else
+            {
+                string url = string.Format("http://texasscca.org/2014_solo_results/tr14_{0}_final.htm", eventNumber);
+                HtmlCode = client.DownloadString(url);
+            }
             htmlDoc.LoadHtml(HtmlCode);
 
             if (htmlDoc.DocumentNode != null)
             {
                 //Change the URL above, comment out this line, and un-comment next line to view previous events
-                return ParseHTML(htmlDoc);
+                DriverData[] results = ParseHTML(htmlDoc);
+                if(results != null)
+                {
+                    return results;
+                }
+                else
+                {
+                    return null;
+                }
                 //SccaDrivers = ParseResultsHTML(htmlDoc);
             }
             else
@@ -57,9 +88,20 @@ namespace SccaLiveWebService.Controllers
         //Function to Parse the HTML for live events
         public static DriverData[] ParseHTML(HtmlAgilityPack.HtmlDocument htmlDoc)
         {
+            
             string driverClass = "";
             List<DriverData> parsedSccaRacers = new List<DriverData>();
-            HtmlAgilityPack.HtmlNode node = htmlDoc.DocumentNode.SelectNodes("//tbody")[1];
+            HtmlAgilityPack.HtmlNode node = null;
+            try
+            {
+                node = htmlDoc.DocumentNode.SelectNodes("//tbody")[1];
+            }
+            catch (Exception e)
+            {
+                DriverData[] blankData = new DriverData[1];
+                return blankData;
+            }
+
             foreach (HtmlAgilityPack.HtmlNode row in node.ChildNodes)
             {
                 if (row.Name.Equals("tr"))
@@ -88,14 +130,19 @@ namespace SccaLiveWebService.Controllers
                     }
 
                     //Create Driver object and add to list
-                    if (driverData.Count != 17)
+                    if (driverData.Count == 12)
                     {
-                        //error, somehow the html was read in wrong
+                        DriverData driverObject = new DriverData(driverData[0], driverData[1], driverData[2], driverData[3], driverData[4], driverData[5], driverData[6], driverData[7], driverData[8], driverData[9], driverData[10], driverData[11]);
+                        parsedSccaRacers.Add(driverObject);
                     }
-                    else
+                    else if(driverData.Count == 17)
                     {
                         DriverData driverObject = new DriverData(driverData[0], driverData[1], driverData[2], driverData[3], driverData[4], driverData[5], driverData[6], driverData[7], driverData[8], driverData[9], driverData[10], driverData[11], driverData[12], driverData[15], driverData[16]);
                         parsedSccaRacers.Add(driverObject);
+                    }
+                    else
+                    {
+                        //Do Nothing
                     }
                 }
             }
